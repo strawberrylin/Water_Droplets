@@ -1,0 +1,54 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  font: 12px normal "microsoft yahei";
+}
+
+#tabs{
+  width: 290px;
+  padding: 5px;
+  height: 150px;
+  margin: 20px;
+}
+
+#tabs ul{
+  list-style: none;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 2px saddlebrown solid;
+}
+
+#tabs ul li{
+  background: #fff;
+  cursor: pointer;
+  float: left;
+  list-style: none;
+  height: 28px;
+  line-height: 28px;
+  margin: 0px 3px;
+  border: 1px #aaa solid;
+  border-bottom: none;
+  display: inline-block;
+  width: 60px;
+  text-align: center;
+}
+
+#tabs ul li.on{
+  border-top: 2px saddlebrown solid;
+  border-bottom: 2px #fff solid;
+  background: dodgerblue;
+}
+
+#tabs div{
+  height: 120px;
+  line-height: 25px;
+  border: 1px #336699 solid;
+  border-top: none;
+  padding: 5px;
+  background: antiquewhite;
+}
+
+.hide{
+  display: none;
+}
