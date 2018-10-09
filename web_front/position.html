@@ -1,0 +1,59 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <title>HTML</title>
+        <meta name="keywords" content="html">
+        <meta name="description" content="My Html">
+        <meta name="author" content="strawberrylin">
+        <link rel="stylesheet" href="" type="text/css">
+        <script type="text/javascript" src=""></script>
+        <style>
+            body {
+                margin-bottom: 120px;
+                border: 1px solid grey;
+            }
+            .container {
+                position: relative;
+                border: 1px solid blue;
+            }
+            nav {
+                position: absolute;
+                left: 0px;
+                width: 200px;
+                border: 2px solid pink;
+            }
+            section {
+                margin-left: 200px;
+                border: 1px solid orange;
+            }
+            footer {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                height: 70px;
+                background-color: white;
+                width: 100%;
+                border: 1px solid green;
+                text-align: center;
+            }
+            * {
+                -webkit-box-sizing: border-box;
+                   -moz-box-sizing: border-box;
+                        box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <ul>home</ul>
+                <ul>contact</ul>
+            </nav>
+            <section>setion的margin-left样式确保了有足够的空间爱你容纳nav元素</section>
+            <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit. </section>
+            <section>调整浏览器窗口，奇妙的现象</section>
+        </div>
+    </body>
+    <footer>如果使用固定位置的页眉或页脚，记得留出充足的空间位置</footer>
+</html>
