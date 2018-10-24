@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Module-Repository>
+    <test-module id="1">
+        <unit-name>Hello Wrold</unit-name>
+        <test-class>me.wlins.testunit.HelloWroldTest</test-class>
+    </test-module>
+    <test-module id="2">
+        <unit-name>LinkList</unit-name>
+        <test-class>me.wlins.testunit.LinkListTest</test-class>
+    </test-module>
+</Module-Repository>
