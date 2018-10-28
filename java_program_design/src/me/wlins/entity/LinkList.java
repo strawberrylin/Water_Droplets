@@ -7,7 +7,7 @@ package me.wlins.entity;
  * @Date 18-10-11 下午10:10
  * @Version 1.0
  **/
-public class LinkList {
+public class LinkList<T> {
     private LinkListNode head;
     private LinkListNode tail;
     private int length;

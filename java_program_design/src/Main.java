@@ -28,7 +28,8 @@ public class Main {
         try {
             Hashtable<String, TestModule> testModules = TestModuleLoader.load("src/App_Config/module.xml");
 
-            TestBase t = (TestBase) ClassLoader.getSystemClassLoader().loadClass(testModules.get("LinkList").getTestClass()).newInstance();
+            String unitName = "LinkList";
+            TestBase t = (TestBase) ClassLoader.getSystemClassLoader().loadClass(testModules.get(unitName).getTestClass()).newInstance();
             t.baseTest();
 
         } catch (Exception e) {

@@ -16,7 +16,7 @@ public class LinkListTest implements TestBase{
         LinkList linkList = new LinkList();
 
         for(int i = 1;i < 10;i ++) {
-            LinkListNode node = new LinkListNode(i);
+            LinkListNode<String> node = new LinkListNode<String>("l"+i);
             linkList.addNode(node);
         }
 
@@ -24,13 +24,13 @@ public class LinkListTest implements TestBase{
         linkList.print();
 
         // 在指定位置插入元素
-        LinkListNode insertNode1 = new LinkListNode(0);
+        LinkListNode<String> insertNode1 = new LinkListNode<String>("l"+"0");
         linkList.insertNodeByIndex(1, insertNode1);
 
-        LinkListNode insertNode2 = new LinkListNode(0);
+        LinkListNode<String> insertNode2 = new LinkListNode<String>("l"+"0");
         linkList.insertNodeByIndex(linkList.getLength(), insertNode2);
 
-        LinkListNode insertNode3 = new LinkListNode(0);
+        LinkListNode<String> insertNode3 = new LinkListNode<String>("l"+"0");
         linkList.insertNodeByIndex(linkList.getLength()+1, insertNode3);
 
         linkList.print();

@@ -5,20 +5,21 @@ package me.wlins.entity;
  * @Description To describe the node of a linklist.
  * @Author strawberrylin
  * @Date 18-10-11 下午10:08
- * @Version 1.0
+ * @Version 1.1
+ * Changed by strawberrylin at 2018/10/28
  **/
-public class LinkListNode {
-    private int data;
+public class LinkListNode<T> {
+    private T data;
     private LinkListNode next;
 
     public LinkListNode() {
     }
 
-    public LinkListNode(int data) {
+    public LinkListNode(T data) {
         this.data = data;
     }
 
-    public int getData() {
+    public T getData() {
         return data;
     }
 
@@ -26,7 +27,7 @@ public class LinkListNode {
         return next;
     }
 
-    public void setData(int data) {
+    public void setData(T data) {
         this.data = data;
     }
 
