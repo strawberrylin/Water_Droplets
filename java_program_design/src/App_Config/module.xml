@@ -9,4 +9,16 @@
         <unit-name>LinkList</unit-name>
         <test-class>me.wlins.testunit.LinkListTest</test-class>
     </test-module>
+    <test-module id="3">
+        <unit-name>Bag</unit-name>
+        <test-class>me.wlins.testunit.BagTest</test-class>
+    </test-module>
+    <test-module id="4">
+        <unit-name>Stack</unit-name>
+        <test-class>me.wlins.testunit.StackTest</test-class>
+    </test-module>
+    <test-module id="5">
+        <unit-name>Queue</unit-name>
+        <test-class>me.wlins.testunit.QueueTest</test-class>
+    </test-module>
 </Module-Repository>

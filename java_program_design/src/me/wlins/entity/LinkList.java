@@ -41,30 +41,31 @@ public class LinkList<T> {
         LinkListNode temp = head;
         for(int i=1;i <= length+1; i ++){
             if(index==i){
-                 node.setNext(temp.getNext());
-                 temp.setNext(node);
-                 length ++;
-                 return;
+                node.setNext(temp.getNext());
+                temp.setNext(node);
+                length ++;
+                return;
             }
             temp=temp.getNext();
         }
     }
 
-    public void deleteNodeByIndex(int index) {
+    public T deleteNodeByIndex(int index) {
         if(index < 1 || index > length){
             System.out.println("输入的位置不合理");
-            return;
-        }
-
-        LinkListNode temp = head;
-        for(int i=1; i <= length;i ++){
-            if(index==i){
-                temp.setNext(temp.getNext().getNext());
-                length --;
-                return;
+        }else{
+            LinkListNode temp = head;
+            for(int i=1; i <= length;i ++) {
+                if (index == i) {
+                    T rs = (T) temp.getNext().getData();
+                    temp.setNext(temp.getNext().getNext());
+                    length--;
+                    return rs;
+                }
+                temp = temp.getNext();
             }
-            temp = temp.getNext();
         }
+        return (T)new Object();
     }
 
     public void print() {
@@ -79,5 +80,15 @@ public class LinkList<T> {
         sb.append(temp.getData());
         sb.append("]");
         System.out.println(sb);
+    }
+
+    public void insert(T data){
+        LinkListNode<T> node = new LinkListNode<T>(data);
+        addNode(node);
+    }
+
+    public void insertByIndex(int index, T data){
+        LinkListNode<T> node = new LinkListNode<>(data);
+        insertNodeByIndex(index, node);
     }
 }
